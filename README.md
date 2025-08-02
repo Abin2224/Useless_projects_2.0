@@ -1,4 +1,4 @@
-<project name>
+SadhyaOS_with_Aunty_bug
 Basic details
 Team Name: Bug_poppers
 Team Members: Abin dev E K ,RIT Kottayam

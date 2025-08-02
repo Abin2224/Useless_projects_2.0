@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onam Festival</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #FEEBC8; /* Light orange background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .main-title {
+            font-size: 3.5rem; /* Responsive font size */
+            font-weight: bold;
+            color: white;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Simple drop shadow */
+            text-align: center;
+        }
+
+        .question-text {
+            font-size: 1.5rem; /* Responsive font size */
+            font-weight: bold;
+            font-style: italic;
+            color: #C2410C; /* Dark orange text */
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column; /* Stack vertically on small screens */
+            align-items: center;
+            justify-content: center;
+            gap: 2rem; /* Spacing between elements */
+            width: 100%;
+            max-width: 1200px; /* Max width for content */
+        }
+
+        .food-choices {
+            display: flex;
+            flex-direction: column; /* Stack vertically on small screens */
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .image-button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+            max-width: 300px; /* Max width for image buttons */
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .image-button:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .image-button img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Cover the button area */
+        }
+
+        .or-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #C2410C;
+        }
+
+        .aunty-container {
+            margin-top: 2rem; /* Margin for spacing on small screens */
+        }
+
+        .aunty-button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+            max-width: 250px; /* Max width for aunty image button */
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .aunty-button:hover {
+            transform: scale(1.05);
+        }
+
+        .aunty-button img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Contain within the button area */
+        }
+
+        /* Media queries for larger screens (e.g., tablets and desktops) */
+        @media (min-width: 768px) {
+            .main-title {
+                font-size: 5rem; /* Larger font size on desktop */
+            }
+
+            .question-text {
+                font-size: 2.25rem; /* Larger font size on desktop */
+            }
+
+            .content-wrapper {
+                flex-direction: row; /* Arrange horizontally on desktop */
+                gap: 4rem; /* More spacing on desktop */
+                align-items: center; /* Align items vertically */
+            }
+
+            .food-choices {
+                flex-direction: row; /* Arrange horizontally on desktop */
+                gap: 4rem;
+            }
+
+            .image-button {
+                max-width: 350px; /* Larger max width for food images on desktop */
+            }
+
+            .or-text {
+                font-size: 2.5rem; /* Larger font size on desktop */
+            }
+
+            .aunty-container {
+                margin-top: 0; /* Reset margin for desktop */
+                margin-left: auto; /* Push aunty to the right */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-title">swaaaaaaghatham</h1>
+
+    <h2 class="question-text">what do you like to eat at onam festival?</h2>
+
+    <div class="content-wrapper">
+        <div class="food-choices">
+            <button class="image-button" onclick="handleButtonClick('C:\Users\abind\Desktop\Useless project\biryani.png')" aria-label="Biryani dish">
+                <img src="/images/biryani.jpeg" alt="A plate of biryani">
+            </button>
+
+            <span class="or-text">or</span>
+
+            <button class="image-button" onclick="handleButtonClick('C:\Users\abind\Desktop\Useless project\sadhya.png')" aria-label="Onam Sadya feast">
+                <img src="/images/sadya.jpeg" alt="Onam Sadya served on a banana leaf">
+            </button>
+        </div>
+
+        <div class="aunty-container">
+            <button class="aunty-button" onclick="handleButtonClick('C:\Users\abind\Desktop\Useless project\ChatGPT Image Aug 1, 2025, 10_22_05 PM.png')" aria-label="Aunty cartoon with a thought bubble">
+                <img src="/images/aunty.jpeg" alt="Cartoon of an old woman thinking 'aunty oru karyam chodikkatte...'">
+            </button>
+        </div>
+    </div>
+    <script>
+        function handleButtonClick(url) {
+            window.open(url, "_blank", "noopener,noreferrer");
+        }
+    </script>
+</body>
+</html>
